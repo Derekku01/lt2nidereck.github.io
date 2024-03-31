@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Activity #2</title>
+    <style>
+        body {
+            width: 99vw;
+            height: 96dvh;
+            background: rgb(0,50,11);
+            background: linear-gradient(0deg, rgba(0,50,11,1) 0%, rgba(0,147,5,1) 53%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .content {
+            color: #fff;
+            text-align: center;
+            font-size: 20px;
+            text-shadow: 2px 3px 2px #000;
+        }
+        .content h2, h4 {
+            padding: 10px
+        }
+    </style>
+</head>
+<body>
+<div class="content">
+    <h2>JavaScript Arithmetic</h2>
+    <h4>A typical arithmetic operation takes two numbers and produces a new number.</h4>
+    <div>
+        <script>
+        let a = prompt("Please enter the first number:", 0);
+        let b = prompt("Please enter the second number:", 0);
+        a = parseFloat(a);
+        b = parseFloat(b);
+        let sum = a + b;
+        let difference = a - b;
+        let product = a * b;
+        let quotient = a / b;
+        
+        document.writeln("<p>First Number: " + a + "</p>");
+        document.writeln("<p>Second Number: " + b + "</p>");
+        document.writeln("<p>Sum: " + sum + "</p>");
+        document.writeln("<p>Difference: " + difference + "</p>");
+        document.writeln("<p>Product: " + product + "</p>");
+        document.writeln("<p>Quotient: " + quotient + "</p>");
+        </script>
+    </div>
+</div>
+</body>
+</html>
